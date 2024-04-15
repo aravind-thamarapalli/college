@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    background-image:linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)),url("https://images.thequint.com/thequint%2F2021-11%2F9030c972-e701-4c79-9e01-ae3358841bbe%2FVRP9345.jpg?auto=format%2Ccompress&fmt=webp&width=720&w=1200");    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.header{
+    display: flex;
+    flex-flow: left;
+    align-items: center;
+}
+img{height: 300px;
+}
+.titler{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    margin-right: 150px;
+}
+.cont-1{
+    box-shadow: rgba(255, 255, 255, 0.663) 0px 5px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-flow: column;  
+}
+.footer{
+    margin-left: 90px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}

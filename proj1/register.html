@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COLLEGE SIGNUP PAGE</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <h1>REGISTRATION FOR STUDENT</h1>
+
+  <form action="register.php" method="post">
+    <label for="name">NAME OF STUDENT:</label>
+    <input type="text" name="name" required >
+
+    <label for="roll_no">REGD. NO:</label>
+    <input type="text" name="roll_no" required>
+
+    <label for="branch">BRANCH:</label>
+		<select id="branch" name="branch" required>
+			<option value="">--Select Branch--</option>
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="MECH">MECH</option>
+			<option value="IT">IT</option>
+			<option value="MRB">MRB</option>
+			<option value="CSD">CSD</option>
+			<option value="CSM">CSM</option>
+			<option value="CIVIL">CIVIL</option>
+		</select>
+
+    <label for="section">SECTION:</label>
+    <select id="section" name="section" required>
+			<option value="">--Select Section--</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+	</select>
+    
+    <label for="blood_group">BLOOD GROUP:</label>
+    <select id="blood_group" name="blood_group">
+    <option value="">--Select Section--</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+
+    <label for="gender">GENDER:</label>
+		
+		<select id="gender" name="gender">
+      <option value="">--Select Section--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <label for="contact_no">CONTACT NO:</label>
+    <input type="tel" name="contact_no" required>
+
+    <label name="password">ENTER THE PASSWORD:</label>
+    <input type="text" name="password" required>
+
+    </select>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>

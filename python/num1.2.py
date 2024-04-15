@@ -1,0 +1,12 @@
+import numpy as np
+arr = np.array([1,2,3,4,5,6,7])
+print("original array")
+print(arr)
+print("biggest element")
+print(np.max(arr))
+print("smallest element")
+print(np.min(arr))
+print("sum")
+print(np.sum(arr))
+print("cummulative sum")
+print(np.cumsum(arr))

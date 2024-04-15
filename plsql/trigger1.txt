@@ -1,0 +1,53 @@
+SQL> create table stude(sid int primary key, sub1 int);
+
+Table created.
+
+SQL> create or replace trigger trg1 before
+  2  insert into stude
+  3  for each row
+  4  begin
+  5  dnms_output.put_line('before insert of '||:new.sid);
+  6  end;
+  7  /
+insert into stude
+       *
+ERROR at line 2:
+ORA-00969: missing ON keyword
+
+
+SQL> create or replace trigger trg1 before
+  2  insert on stude
+  3  for each row
+  4  begin
+  5  dnms_output.put_line('before insert of '||:new.sid);
+  6  end;
+  7  /
+
+Warning: Trigger created with compilation errors.
+
+SQL> show errors
+Errors for TRIGGER TRG1:
+
+LINE/COL ERROR
+-------- -----------------------------------------------------------------
+2/1      PL/SQL: Statement ignored
+2/1      PLS-00201: identifier 'DNMS_OUTPUT.PUT_LINE' must be declared
+SQL> create or replace trigger trg1 before
+  2  insert on stude
+  3  for each row
+  4  begin
+  5  dbms_output.put_line('before insert of '||:new.sid);
+  6  end;
+  7  /
+
+Trigger created.
+
+SQL> insert into stude values(23,5);
+before insert of 23
+
+1 row created.
+
+SQL> insert into stude values(24,6);
+before insert of 24
+
+1 row created.

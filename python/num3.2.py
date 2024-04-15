@@ -1,0 +1,10 @@
+import numpy as np
+arr=np.array([1,5,8,6,4,7,2,4,9,2,4,7,2,1,6,8,7,2])
+print("original array")
+print(arr)
+print("sorted array")
+print(np.sort(arr))
+print("searing positions of 2")
+print(np.where(arr==2))
+print("counting of 2")
+print(np.count_nonzero(arr==2))

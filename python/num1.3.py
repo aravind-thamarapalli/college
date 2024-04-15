@@ -1,0 +1,10 @@
+import numpy as np
+arr = np.array([1,2,3,4,5,6,7,8])
+print("no of dimensions in array")
+print(arr.ndim)
+print("shape of the array")
+print(arr.shape)
+print("size of array")
+print(arr.size)
+print("data type of elements")
+print(arr.dtype)

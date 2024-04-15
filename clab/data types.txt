@@ -1,0 +1,120 @@
+       +----------------+
+       |     Start      |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       | Declare i, f,  |
+       | c, and d      |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Enter an     |
+       |   integer      |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Scan i       |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Enter a      |
+       |   float        |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Scan f       |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Enter a      |
+       |   character    |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Scan c       |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Enter a      |
+       |   double       |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |   Scan d       |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |  Print values  |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       | Print Integer  |
+       | Print Float    |
+       | Print Character|
+       | Print Double   |
+       +----------------+
+                |
+                |
+                v
+       +----------------+
+       |      End       |
+       +----------------+
+
+
+#include <stdio.h>
+
+int main() {
+    int i;
+    float f;
+    char c;
+    double d;
+
+    // Scanning integer
+    printf("Enter an integer: ");
+    scanf("%d", &i);
+
+    // Scanning float
+    printf("Enter a float: ");
+    scanf("%f", &f);
+
+    // Scanning character
+    printf("Enter a character: ");
+    scanf(" %c", &c);
+
+    // Scanning double
+    printf("Enter a double: ");
+    scanf("%lf", &d);
+
+    // Printing the scanned values
+    printf("\nInteger: %d\n", i);
+    printf("Float: %.2f\n", f);
+    printf("Character: %c\n", c);
+    printf("Double: %lf\n", d);
+
+    return 0;
+}
+
+
+

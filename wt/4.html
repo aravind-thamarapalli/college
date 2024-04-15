@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Vegetarian Food</title>
+<style>
+    
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; 
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(https://townsquare.media/site/66/files/2018/04/Cocktails.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89);
+    background-attachment: fixed;
+}
+.header {
+    background-color: #333;
+    color: #f2f2f2;
+    overflow: hidden;
+    top: 0;
+    transition: top 0.3s;
+    padding-left: 100px;
+}
+.header a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.header a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.search-bar {
+    width: 200px; 
+    margin-top: 7px;
+    padding: 8px;
+    margin-left: 640px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.container {
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+}
+.menu-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; 
+}
+.menu-item .content {
+    padding: 15px;
+    text-align: left; 
+}
+.menu-item .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.menu-item .cost {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu-item .order-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-item .order-btn:hover {
+    background-color: #555;
+}
+.footer{  
+    background-color: black;
+    color: white;
+}
+.footer-about, .footer-category, .quick-links, .get-in-touch{
+    display: inline-block;
+    margin-left: 100px;
+    padding-left: 30px;
+
+}
+.copyright{
+    margin-left: 100px;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="header">  
+    <div><a href="main.html">HOME</a></div>
+    <div><a href="1.html">VEGAN</a></div>
+    <div><a href="2.html">NON-VEG</a></div>
+    <div><a href="3.html">DESSERTS</a></div>
+    <div><a href="4.html"
+    style="background-color: white;
+        color: black;">BEVERAGES</a></div>
+    <input type="text" class="search-bar" placeholder="Search...">
+</div>
+<p style="color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+          margin-left: 140px;
+          font-size: 55px;
+          font-weight: 700;">POMATO</p>
+<hr>
+<div class="container">
+    <h1>Have Your Drink...</h1>
+    <div class="menu-items-container">
+        <div class="menu-item">
+            <img src="https://i5.walmartimages.com/asr/ad54a3f7-6c51-4ca6-b745-9c8162fbb20d_1.434407eaa2884dad010803a35933f651.jpeg" alt="Food Item 1">
+            <div class="content">
+                <span class="cost">$1</span>
+                <p class="name">Coca Cola</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://m.media-amazon.com/images/I/71h7T4jsgzL._SL1500_.jpg" alt="Food Item 2">
+            <div class="content">
+                <span class="cost">$1.5</span>
+                <p class="name">Thumbs-Up</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.FnSCkDz1TxtjipG32jYrqwHaHy?rs=1&pid=ImgDetMain" alt="Food Item 3">
+            <div class="content">
+                <span class="cost">$0.9</span>
+                <p class="name">7 Up</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.hFR3v8RLRAiJTU2p4qQTMQHaHa?rs=1&pid=ImgDetMain" alt="Food Item 4">
+            <div class="content">
+                <span class="cost">$0.6</span>
+                <p class="name">Miranda</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://cocktaily.nl/wp-content/uploads/2021/06/timur-romanov-2DV8y3LU7Ac-unsplash-760x760.jpg" alt="Food Item 5">
+            <div class="content">
+                <span class="cost">$1.2</span>
+                <p class="name">Blue Curacoa</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP._5YaXe0kO43PF-awHLKw9wHaGm?pid=ImgDet&w=206&h=183&c=7&dpr=1.3" alt="Food Item 6">
+            <div class="content">
+                <span class="cost">$1.5</span>
+                <p class="name">Mojito</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.slurrp.com/prod/articles/v172p2i5zbs.webp" alt="Food Item 7">
+            <div class="content">
+                <span class="cost">$1.3</span>
+                <p class="name">Orange Oracle</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.lewKypi-h8jRbBH3dQBQSQHaE8?rs=1&pid=ImgDetMain" alt="Food Item 8">
+            <div class="content">
+                <span class="cost">$2</span>
+                <p class="name">Virgin Mary</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div>
+      <div class="footer-about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          aspernatur sit deleniti enim voluptas voluptatum incidunt rerum,
+          exercitationem voluptate nemo quo impedit ad perspiciatis tempore
+          nulla dolore fugit, fuga eos.
+        </p>
+      </div>
+
+      <div class="footer-category">
+        <h2>Our Menu</h2>
+
+        <ul>
+          <li>Biryani</li>
+          <li>Chicken</li>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Pasta</li>
+        </ul>
+        </div>
+
+        <div class="quick-links">
+        <h2>Quick Links</h2>
+
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Menu</li>
+          <li>Order</li>
+          <li>Services</li>
+        </ul>
+        </div>
+
+        <div class="get-in-touch">
+        <h2>Get in touch</h2>
+        <ul>
+          <li>Account</li>
+          <li>Support Center</li>
+          <li>Feedback</li>
+          <li>Suggession</li>
+          <li>Credits</li>
+        </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2022. All Rights Reserved.</p>
+  </div>
+</div>
+</body>
+</html>

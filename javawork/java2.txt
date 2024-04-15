@@ -1,0 +1,3 @@
+alphabets:5
+digits1
+special:6
